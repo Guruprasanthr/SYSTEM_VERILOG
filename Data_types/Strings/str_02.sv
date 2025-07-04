@@ -6,6 +6,8 @@ module str;
 endmodule
 
 
+Output: A = guruprasanth
+
 
 module str;
   string A= "guruprasanth";
@@ -13,3 +15,5 @@ module str;
     $display("A=%s",A.toupper());
   end
 endmodule
+
+Output: A = GURUPRASANTH
