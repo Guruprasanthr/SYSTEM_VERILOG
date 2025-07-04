@@ -4,3 +4,6 @@ module str;
     $display("A=%d",A.len);
   end
 endmodule
+
+
+Output: A= 12
