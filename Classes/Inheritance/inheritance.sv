@@ -1,7 +1,7 @@
 class main;
   string a;
   int b;
-  function void declare();
+  function new();
     a="APPLE";
     b=7;
   endfunction
@@ -9,29 +9,31 @@ class main;
     $display("a=%0s,b=%0d",a,b);
   endfunction
 endclass
+
 class sub extends main;
   string d;
   int c;
-  function void declar();
-    super.declare();
+  function new();
+    //super.declare();
     d=a;
-    c=8;
+    c=b;
   endfunction
-  function void displa();
+  function void display();
     $display("a=%0s, b=%0d ,d=%0s,c=%0d",a,b,d,c);
   endfunction 
  endclass
              
 module hars;
-  initial begin
   main p1;
   sub p2;
-    p1=new();
-    p2=new();
-  p1.declare();
-  p2.declar();
+  initial begin
+  p1=new();
+  p2=new();
+//   p1.declare();
+//   p2.declare();
+//   p2.declar();
   p1.display();
-  p2.displa();
+  p2.display();
   end
 endmodule
   
