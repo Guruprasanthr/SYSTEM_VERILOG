@@ -27,7 +27,9 @@ endclass
     end
   endmodule
 
-
+def:
+By default if we does not define any attributes with keywords 'local' and 'protected', then by default it is 'public'.
+It provides full access to all attributes and methods to child classes.
 output:
 # KERNEL: ......a=2,b=4,c=5
 # KERNEL: ......a=2,b=4,c=5
