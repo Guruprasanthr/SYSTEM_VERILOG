@@ -27,7 +27,9 @@ endclass
     end
   endmodule
 
-
+def:
+A member declared as 'local' is accessible only to the methods of the same class and will not be able to access by child class.
+  
 output
 # KERNEL: .............a=2,b=4,c=5
 # KERNEL: a=2
