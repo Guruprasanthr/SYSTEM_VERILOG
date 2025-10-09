@@ -1,3 +1,4 @@
+//Waits for all threads
 module frk;
   initial begin
     $display("...................");
