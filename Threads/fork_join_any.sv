@@ -1,4 +1,4 @@
-//Waits for first to finish
+//Continues after any one thread finishes
 module frk;
   initial begin
     $display("...................");
